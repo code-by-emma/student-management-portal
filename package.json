@@ -1,0 +1,17 @@
+{
+  "name": "smp",
+  "version": "1.0.0",
+  "description": "A full-stack, role-based Student Management Portal built with **PHP 8 (OOP-style, MVC-inspired), MySQL, and Tailwind CSS**. Three roles — **Administrator, Teacher, Student** — each get their own dashboard and permissions.",
+  "main": "index.js",
+ "scripts": {
+    "watch": "tailwindcss -i input.css -o output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

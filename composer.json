@@ -1,0 +1,9 @@
+{
+    "name": "smp/student-management-portal",
+    "description": "Student Management Portal",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^7.1"
+    }
+}

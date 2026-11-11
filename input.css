@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563EB;
+  --color-secondary: #1E40AF;
+  --color-accent: #22C55E;
+  --color-bgapp: #F8FAFC;
+  --color-text-black:000000;
+
+  --bg-login-image:url(https://static.vecteezy.com/system/resources/thumbnails/046/770/442/small_2x/group-of-4-smiling-teenage-students-wearing-uniform-standing-in-classroom-photo.jpeg);
+}
+
+@source "./**/*.php";
+@source "../**/*.php";

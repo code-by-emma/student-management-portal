@@ -1,0 +1,14 @@
+# Prevent any uploaded file from ever being executed as a script,
+# even if validation is somehow bypassed. Defense in depth.
+
+<IfModule mod_php7.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+  php_flag engine off
+</IfModule>
+
+# Belt-and-suspenders: block execution of common script extensions directly.
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>

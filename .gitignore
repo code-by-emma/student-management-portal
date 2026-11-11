@@ -1,0 +1,39 @@
+# Dependencies (restore with: composer install)
+/vendor/
+
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+/config/mail.php
+/config/secrets.php
+
+# User uploads (keeps the folders and the security .htaccess, ignores the files)
+/uploads/*/*
+!/uploads/*/.gitkeep
+
+# Mail log and the temporary diagnostic page
+/storage/*
+!/storage/.htaccess
+!/storage/.gitkeep
+mailtest.php
+
+# Database dumps contain real student data
+/backups/
+*.sql.gz
+*.dump
+
+# Logs
+*.log
+error_log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+# Node (Tailwind build tools), restore with: npm install
+/node_modules/
+*.code-workspace
