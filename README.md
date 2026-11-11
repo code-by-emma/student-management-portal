@@ -142,3 +142,6 @@ smp/
    3. Run `npm install` only if you plan to rebuild the Tailwind CSS.
    4. Import `database/schema.sql`, then run `database/seed.php` once for demo accounts.
       The demo passwords are for local testing only. Change them on any real site.
+
+      > Learning project. Review and test before using with real student data or real payments.
+      > Demo logins in `database/seed.php` are for local testing only. Change them on any real site.
