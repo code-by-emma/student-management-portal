@@ -132,3 +132,13 @@ smp/
 - [ ] Turn off `APP_DEBUG` (leave the `display_errors` env var unset in production)
 - [ ] Restrict `uploads/` from executing scripts (add a `.htaccess` with `php_flag engine off` in that folder on Apache)
 - [ ] Take regular MySQL backups (`mysqldump`)
+
+   ## Quick setup
+
+   1. Copy `config/mail.sample.php` to `config/mail.php` and fill in your SMTP details
+      (for Gmail, use an App Password). Without it, the password-reset page shows
+      "email delivery isn't set up" instead of sending.
+   2. Run `composer install` to install PHPMailer.
+   3. Run `npm install` only if you plan to rebuild the Tailwind CSS.
+   4. Import `database/schema.sql`, then run `database/seed.php` once for demo accounts.
+      The demo passwords are for local testing only. Change them on any real site.
