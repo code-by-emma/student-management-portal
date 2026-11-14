@@ -59,16 +59,14 @@ Classes are organized under a master **Grade Level** list (e.g. "Grade 1"), mana
    ```bash
    chmod -R 755 uploads/
    ```
+  
 
-6. **Visit the app**: `http://localhost/smp/`
-
-### Demo accounts (created by `seed.php`)
+ 6.**Live demo link:** https://emma-student-portal.fwh.is
 
 | Role    | Username | Password       |
 |---------|----------|-----------------|
-| Admin   | `admin`  | `Admin@123`     |
-| Teacher | `jokoro` | `Teacher@123`   |
-| Student | `cumeh`  | `Student@123`   |
+| Teacher | `jokoro` | `JokoroJo@1234`   |
+| Student | `cumeh`  | `Meh@1011`   |
 
 **Change these passwords immediately in production** (each role can do this from *My Profile → Change password*).
 
